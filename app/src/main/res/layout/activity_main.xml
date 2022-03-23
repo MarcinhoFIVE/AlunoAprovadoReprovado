@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Aluno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="20sp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/NotaF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Primeira Nota"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nome"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="138dp"
+        android:layout_marginTop="30sp"/>
+
+    <EditText
+        android:id="@+id/NotaS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Segunda Nota"
+        app:layout_constraintTop_toBottomOf="@+id/NotaF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="20sp"/>
+
+    <EditText
+        android:id="@+id/Faltas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Faltas"
+        app:layout_constraintTop_toBottomOf="@+id/NotaS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="20sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:text="Verificar"
+        app:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Faltas"
+        tools:ignore="MissingConstraints" />
+        <!-- android:background="@color/black" -->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
